@@ -98,7 +98,7 @@ body{
 }
 
 .links li.website a {
-    background-image: url(/images/favicon.png);
+    background-image: url(/gallery/images/favicon.png);
     background-size:2em;
     background-position-x: left;
 }
