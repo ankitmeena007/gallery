@@ -1,4 +1,4 @@
-# Image Gallery using Lightbox
+# Image Gallery using Lightbox2
 ### Supports Lazy Loading
 
 
