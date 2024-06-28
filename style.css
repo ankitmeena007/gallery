@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    cursor: crosshair;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+
+}
+
+.gallery img{
+    width: 100%;
+}
+
+
+
+
+.gallery img{
+    box-shadow: 0px 0px 2px rgba(0,255,255,0.5), 
+                0px 0px 4px rgba(0,255,255,0.5), 
+                0px 0px 8px rgba(0,255,255,0.5), 
+                0px 0px 16px rgba(0,255,255,0.5);
+  }
+  
+.gallery img:hover{
+    box-shadow: 0px 0px 4px rgba(0,255,255,0.7), 
+                0px 0px 8px rgba(0,255,255,0.7), 
+                0px 0px 16px rgba(0,255,255,0.7), 
+                0px 0px 24px rgba(0,255,255,0.7);
+    transform: translateY(-10px);
+    transition: 0.2s;
+  }
+
+.footer{
+    color:grey;
+    text-align: center;
+  }
+
+
+
+
+.links {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    
+}
+
+.links li {
+    margin-left: 8px;
+}
+
+.links li a {
+    display: block;
+    border-radius: 16px;
+    text-indent: 150%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: 8px;
+    background-size: 16px;
+    transition: background-color .1s linear;
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: rgba(200, 200, 200, 0.25);
+}
+
+.links li a:hover, .links li a:focus {
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+.links li a:active {
+    background-color: rgba(200, 200, 200, 0.25);
+}
+
+.links li.website a {
+    background-image: url(../images/favicon.png);
+    background-size:2em;
+    background-position-x: left;
+}
+
+.links li.github a {
+    text-indent: 0;
+    width: auto;
+    font-size: 23px;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding: 0 12px;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.links li.link a {
+    text-indent: 0;
+    width: auto;
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding: 0 12px;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 600;
+    text-decoration: none;
+}
